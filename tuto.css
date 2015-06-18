@@ -1,0 +1,72 @@
+body {
+
+    padding-top: 10px;
+
+}
+
+[class*="col-"], footer {
+
+    
+    
+    
+/*    background-color: darkgrey;*/
+/*    background-color: darkslateblue;*/
+
+/*    border: 1px solid black;*/
+
+
+    line-height: 40px;
+
+    text-align: center;
+    
+
+}
+
+.yellowBorder{
+    border: 0px solid yellow;
+}
+.greenBorder{
+    border: 0px solid green;
+}
+
+.blueBorder{
+    border: 0px solid blue;
+}
+.redBorder{
+    border: 0px solid red;
+}
+.formTest1{
+/*    font-size: 0.8em;*/
+    line-height:  15px;
+}
+.formAlignLeft{
+    text-align: left;
+}
+.formAlignCenter{
+    text-align: center;
+}
+
+.form_general{
+    border-radius: 6px;
+    
+    background: rgba(199,199,199,1);
+    background: -moz-linear-gradient(left, rgba(199,199,199,1) 0%, rgba(184,184,184,1) 48%, rgba(224,224,224,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(199,199,199,1)), color-stop(48%, rgba(184,184,184,1)), color-stop(100%, rgba(224,224,224,1)));
+    background: -webkit-linear-gradient(left, rgba(199,199,199,1) 0%, rgba(184,184,184,1) 48%, rgba(224,224,224,1) 100%);
+    background: -o-linear-gradient(left, rgba(199,199,199,1) 0%, rgba(184,184,184,1) 48%, rgba(224,224,224,1) 100%);
+    background: -ms-linear-gradient(left, rgba(199,199,199,1) 0%, rgba(184,184,184,1) 48%, rgba(224,224,224,1) 100%);
+    background: linear-gradient(to right, rgba(199,199,199,1) 0%, rgba(184,184,184,1) 48%, rgba(224,224,224,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7c7c7', endColorstr='#e0e0e0', GradientType=1 );
+
+}
+
+.form_selections, .form_forms, .form_infos{
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+.form_titles{
+    @import url(http://fonts.googleapis.com/css?family=Oswald);
+
+    font-family: 'Oswald', sans-serif;
+}
