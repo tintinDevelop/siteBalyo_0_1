@@ -27,9 +27,19 @@ FILE : Form_window.php
 
                 <!--Bloc Selections-->
                 <aside class="col-md-2 col-md-offset-0 form_selections">
-                    Sélections {{i}}_1<br/>
-                    Sélections {{i}}_2<br/>
-                    Sélections {{i}}_3<br/><br/><br/><br/>
+                    {% if i == 1 %}
+
+                        Société<br/>
+                        Contact<br/>
+                        Situation actuelle<br/>
+                        Situation de votre projet AGV<br/><br/><br/>
+                    {% else %}
+
+                        Sélections {{i}}_1<br/>
+                        Sélections {{i}}_2<br/>
+                        Sélections {{i}}_3<br/><br/><br/><br/>
+                    {% endif %}
+                    
                 </aside>
 
 

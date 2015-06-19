@@ -74,7 +74,7 @@ error_reporting(E_ALL);
 <!--        <div class="container yellowBorder">-->
         <div class="container">
 
-            <div class="starter-template">
+            <div class="starter-template" style="border: 0px">
                 <h1>Titre</h1>
 <!--                <p class="lead">Texte</p>-->
             </div>
@@ -83,7 +83,26 @@ error_reporting(E_ALL);
         </div><!-- /.container -->
         
         
- 
+<!--
+        <div class="container">
+
+            <div class="panel panel-primary">
+
+                <div class="panel-heading">
+
+                    <h3 class="panel-title">Titre</h3>
+
+                </div>
+
+                <div class="panel-body">Contenu</div>
+
+            </div>
+            
+        </div>
+-->
+        
+        
+<!--        <div class="container form_general">-->
         <div class="container form_general">
 
             <div class="row">
@@ -91,7 +110,7 @@ error_reporting(E_ALL);
                 <div class="col-md-12 redBorder">
 
                     <div class="row">
-                        <div class="col-md-12 blueBorder form_titles">
+                        <div class=" col-md-12 blueBorder form_titles">
                             
                             <div class="row">
                                 
@@ -105,30 +124,31 @@ error_reporting(E_ALL);
 -->
                                 
                                 
-                                <div class="col-md-2 col-sd-1 blueBorder selectCategorie">
+                                <div class="col-xs-4 col-md-2 blueBorder selectCategorie">
                                     <span style="display:none">1</span>
-                                    <button type="button" class="btn btn-hot text-uppercase btn-lg expendButton">Catégorie 1</button>
+                                    <button type="button" class="btn btn-hot text-uppercase btn-lg btn-block">Client</button>
                                 </div>
                                 
-                                <div class="col-md-2 col-sd-1 blueBorder selectCategorie">
+                                <div class="col-xs-4 col-md-2 blueBorder selectCategorie">
                                     <span style="display:none">2</span>
-                                    <button type="button" class="btn btn-hot text-uppercase btn-lg expendButton">Catégorie 2</button>
+<!--                                    <button type="button" class="btn btn-hot text-uppercase btn-lg expendButton">Catégorie 2</button>-->
+                                    <button type="button" class="btn btn-hot text-uppercase btn-lg btn-block ">Catégorie 2</button>
                                 </div>
-                                <div class="col-md-2 blueBorder selectCategorie">
+                                <div class="col-xs-4 col-md-2 blueBorder selectCategorie">
                                     <span style="display:none">3</span>
-                                    <button type="button" class="btn btn-hot text-uppercase btn-lg expendButton">Catégorie 3</button>
+                                    <button type="button" class="btn btn-hot text-uppercase btn-lg btn-block">Catégorie 3</button>
                                 </div>
-                                <div class="col-md-2 blueBorder selectCategorie">
+                                <div class="col-xs-4 col-md-2 blueBorder selectCategorie">
                                     <span style="display:none">4</span>
-                                    <button type="button" class="btn btn-hot text-uppercase btn-lg expendButton">Catégorie 4</button>
+                                    <button type="button" class="btn btn-hot text-uppercase btn-lg btn-block">Catégorie 4</button>
                                 </div>
-                                <div class="col-md-2 blueBorder selectCategorie">
+                                <div class="col-xs-4 col-md-2 blueBorder selectCategorie">
                                     <span style="display:none">5</span>
-                                    <button type="button" class="btn btn-hot text-uppercase btn-lg expendButton">Catégorie 5</button>
+                                    <button type="button" class="btn btn-hot text-uppercase btn-lg btn-block">Catégorie 5</button>
                                 </div>
-                                <div class="col-md-2 blueBorder selectCategorie">
+                                <div class="col-xs-4 col-md-2 blueBorder selectCategorie">
                                     <span style="display:none">6</span>
-                                    <button type="button" class="btn btn-hot text-uppercase btn-lg expendButton">Catégorie 6</button>
+                                    <button type="button" class="btn btn-hot text-uppercase btn-lg btn-block">Catégorie 6</button>
                                 </div>
 
                                 
@@ -229,6 +249,7 @@ error_reporting(E_ALL);
 ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!--        <script src="../jquery.js"></script>-->
         <script src="../../dist/js/bootstrap.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>

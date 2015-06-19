@@ -107,10 +107,13 @@ body{
 
 
 .expendButton{
-/*    width: 105%;*/
+/*    display: inline;*/
+    width: 99%;
+    align-self: auto;
     font-size: 1.4em;
 /*    border: 3px solid pink;*/
 /*    border: 0px solid red;*/
+/*    margin-left: -14%;*/
 }
 
 
