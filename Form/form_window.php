@@ -5,74 +5,78 @@ FILE : Form_window.php
 -->
 
 
+<div class="col-md-12 blueBorder categorie_conteneurGeneral form_titles"  style="display:none">
+    <div class="row">
 
 
+        <form action='../getData.php' method='post'>
 
-    <form action='../getData.php' method='post'>
-
-        {# Commentaire : #}
-
-
-    {% set display = 'block' %}
+            {# Commentaire : #}
 
 
-    {% for i in 1..iter %}
-        {% if i > 1 %}
-            {% set display = 'none' %}
-
-        {% endif %}
-        <div class='col-md-12 blueBorder categorie_conteneur'  style='display:{{display}}'>
-
-            <div class="row">
-
-                <!--Bloc Selections-->
-                <aside class="col-md-2 col-md-offset-0 form_selections">
-                    {% if i == 1 %}
-
-                        Société<br/>
-                        Contact<br/>
-                        Situation actuelle<br/>
-                        Situation de votre projet AGV<br/><br/><br/>
-                    {% else %}
-
-                        Sélections {{i}}_1<br/>
-                        Sélections {{i}}_2<br/>
-                        Sélections {{i}}_3<br/><br/><br/><br/>
-                    {% endif %}
-                    
-                </aside>
+        {% set display = 'block' %}
 
 
-                <!--Formulaires-->
-                <div class="col-md-7 col-md-offset-0 form_forms">
-                    <div class="row">
-                        <div class="col-md-12 redBorder">  
+        {% for i in 1..iter %}
+            {% if i > 1 %}
+                {% set display = 'none' %}
 
-                            {% if i == 0 %}
-                                {% include 'form_1.html' %}
-                            {% elseif i == 1 %}
-                                {% include 'form_1.html' %}
-                            {% else %}
-                                {% include 'form_1.html' %}
-                            {% endif %}
+            {% endif %}
+            <div class='col-md-12 blueBorder categorie_conteneur'  style='display:{{display}}'>
+
+                <div class="row">
+
+                    <!--Bloc Selections-->
+                    <aside class="col-md-2 col-md-offset-0 form_selections">
+                        {% if i == 1 %}
+
+                            Société<br/>
+                            Contact<br/>
+                            Situation actuelle<br/>
+                            Situation de votre projet AGV<br/><br/><br/>
+                        {% else %}
+
+                            Sélections {{i}}_1<br/>
+                            Sélections {{i}}_2<br/>
+                            Sélections {{i}}_3<br/><br/><br/><br/>
+                        {% endif %}
+
+                    </aside>
 
 
+                    <!--Formulaires-->
+                    <div class="col-md-7 col-md-offset-0 form_forms">
+                        <div class="row">
+                            <div class="col-md-12 redBorder">  
+
+                                {% if i == 0 %}
+                                    {% include 'form_1.html' %}
+                                {% elseif i == 1 %}
+                                    {% include 'form_1.html' %}
+                                {% else %}
+                                    {% include 'form_1.html' %}
+                                {% endif %}
+
+
+                            </div>
                         </div>
                     </div>
+
+
+                    <!--Informations/Influences-->
+                    <aside class="col-md-3 col-md-offset-0">
+                        <div class="row">
+                            <aside class="col-md-12 col-md-offset-0 form_infos">Informations {{i}}<br/><br/><br/></aside>
+                            <aside class="col-md-12 col-md-offset-0 form_infos">Conséquences {{i}}<br/><br/><br/></aside>
+                        </div>
+                    </aside>
+
                 </div>
-
-
-                <!--Informations/Influences-->
-                <aside class="col-md-3 col-md-offset-0">
-                    <div class="row">
-                        <aside class="col-md-12 col-md-offset-0 form_infos">Informations {{i}}<br/><br/><br/></aside>
-                        <aside class="col-md-12 col-md-offset-0 form_infos">Conséquences {{i}}<br/><br/><br/></aside>
-                    </div>
-                </aside>
 
             </div>
 
-        </div>
-
-    {% endfor %}
-    </form>
+        {% endfor %}
+        </form>
+        
+    </div>
+</div>

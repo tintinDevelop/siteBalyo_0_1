@@ -1,7 +1,17 @@
 body {
 
     padding-top: 10px;
+    background: url("images/balyo_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+/*    height: 100%;*/
 
+}
+
+@media (max-width: 767px) {
+    body {
+        background-size: 150%;
+    }
 }
 
 [class*="col-"], footer {

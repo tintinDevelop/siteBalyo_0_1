@@ -1,7 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald);
+.form_titles{
+    @import url(http://fonts.googleapis.com/css?family=Oswald);
+
+    font-family: 'Oswald', sans-serif;
+}
 
 body{
-/*    font-family: 'Oswald', sans-serif;*/
+    /*    font-family: 'Oswald', sans-serif;*/
 }
 
 .btn{
@@ -107,16 +111,12 @@ body{
 
 
 .expendButton{
-/*    display: inline;*/
+    /*    display: inline;*/
     width: 99%;
     align-self: auto;
     font-size: 1.4em;
-/*    border: 3px solid pink;*/
-/*    border: 0px solid red;*/
-/*    margin-left: -14%;*/
+    /*    border: 3px solid pink;*/
+    /*    border: 0px solid red;*/
+    /*    margin-left: -14%;*/
 }
-
-
-}
-
 
